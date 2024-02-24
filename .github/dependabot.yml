@@ -7,13 +7,9 @@ updates:
       interval: "monthly"
     assignees:
       - "jgarber623"
-    commit-message:
-      prefix: "ci"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "monthly"
     assignees:
       - "jgarber623"
-    commit-message:
-      prefix: "chore"
