@@ -23,7 +23,7 @@ Next, add the plugin to your project's [Eleventy configuration file](https://www
 
 ```js
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-template'));
+  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-template"));
 };
 ```
 
@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
 Eleventy v3.0.0 [added bundler-free ESM support](https://www.11ty.dev/blog/canary-eleventy-v3). This plugin works with either ESM or CommonJS projects!
 
 ```js
-import templatePlugin from '@jgarber/eleventy-plugin-template';
+import templatePlugin from "@jgarber/eleventy-plugin-template";
 
 export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(templatePlugin);
