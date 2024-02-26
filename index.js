@@ -6,4 +6,4 @@ module.exports = function(eleventyConfig, options = {}) {
   } catch (error) {
     console.log(`WARN: Eleventy Plugin (${pkg.name}) Compatibility: ${error.message}`);
   }
-}
+};
