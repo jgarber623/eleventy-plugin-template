@@ -22,24 +22,14 @@ npm install --save-dev @jgarber/eleventy-plugin-template
 Next, add the plugin to your project's [Eleventy configuration file](https://www.11ty.dev/docs/config#default-filenames) (e.g. `eleventy.config.js`):
 
 ```js
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-template"));
-};
+import eleventyTemplatePlugin from "@jgarber/eleventy-plugin-template";
+
+export default async function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyTemplatePlugin);
+}
 ```
 
 ## Options
-
-## ESM Support
-
-Eleventy v3.0.0 [added bundler-free ESM support](https://www.11ty.dev/blog/canary-eleventy-v3). This plugin works with either ESM or CommonJS projects!
-
-```js
-import templatePlugin from "@jgarber/eleventy-plugin-template";
-
-export default async function(eleventyConfig) {
-  eleventyConfig.addPlugin(templatePlugin);
-}
-```
 
 ## Acknowledgments
 
